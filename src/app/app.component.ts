@@ -35,20 +35,4 @@ export class AppComponent{
         this.dataService.addData(this.myForm.value.Name);
     }
 
-
-    onChange(increased:any){
-      let parent = increased.target.parentNode.parentNode.parentNode.parentNode.parentNode;
-      let elem = increased.target.parentNode.parentNode.parentNode;
-      elem.remove();
-      let clone = elem.cloneNode(true);
-      parent.childNodes[0].appendChild(clone);
-    }
-
-    onChangeCos(increased:any){
-      let parent = increased.target.parentNode.parentNode.parentNode.parentNode.parentNode;
-      let elem = increased.target.parentNode.parentNode.parentNode;
-      elem.remove();
-      let clone = elem.cloneNode(true);
-      parent.childNodes[2].appendChild(clone);
-    }
 }

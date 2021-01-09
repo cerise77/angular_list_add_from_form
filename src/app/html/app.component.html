@@ -1,7 +1,7 @@
 <div>
 
     <div>
-      <div *ngFor="let itemCo of itemCos" (click)="onChangeCos($event)">
+      <div *ngFor="let itemCo of itemCos">
         <mat-checkbox >{{itemCo}}</mat-checkbox>
       </div>
     </div>
@@ -16,7 +16,7 @@
     </form>
 
     <div>
-      <div *ngFor="let item of items" (click)="onChange($event)">
+      <div *ngFor="let item of items">
         <mat-checkbox>{{item}}</mat-checkbox>
       </div>
     </div>
